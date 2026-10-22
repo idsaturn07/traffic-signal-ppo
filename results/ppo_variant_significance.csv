@@ -1,0 +1,10 @@
+demand_scale,metric,independent_mean,neighbor_mean,t_stat,p_value,significant_at_0.05
+0.6,arrived,163.2,165.0,-0.726,0.4884,False
+0.6,travel_time,162.49,164.2,-0.754,0.4728,False
+0.6,queue,11.0,11.2,-0.064,0.9505,False
+1.0,arrived,262.4,261.4,0.169,0.8697,False
+1.0,travel_time,170.87,171.75,-0.289,0.7805,False
+1.0,queue,16.8,20.8,-0.586,0.575,False
+1.4,arrived,347.8,344.8,0.288,0.7808,False
+1.4,travel_time,185.93,185.98,-0.01,0.9927,False
+1.4,queue,27.8,42.8,-1.363,0.2104,False

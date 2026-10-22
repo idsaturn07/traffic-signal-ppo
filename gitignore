@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+
+# transient SUMO scratch output (regenerated on every run, not a result artifact)
+sumo/research/results/tripinfo_tmp.xml
+
+# OS / editor noise
+.DS_Store
+.vscode/
+*.swp

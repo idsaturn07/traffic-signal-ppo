@@ -1,0 +1,65 @@
+﻿<routes>
+    <vType id="car"
+           accel="1.0"
+           decel="4.5"
+           length="5.0"
+           minGap="2.5"
+           maxSpeed="13.89"
+           sigma="0.5"/>
+
+    <!-- Eastbound corridor -->
+    <route id="west_to_east" edges="W_I1 I1_I2 I2_I3 I3_E"/>
+
+    <!-- Westbound corridor -->
+    <route id="east_to_west" edges="E_I3 I3_I2 I2_I1 I1_W"/>
+
+    <!-- Side-road traffic at intersection 1 -->
+    <route id="north1_to_east" edges="N1_I1 I1_I2 I2_I3 I3_E"/>
+    <route id="south1_to_west" edges="S1_I1 I1_W"/>
+    <route id="south1_to_east" edges="S1_I1 I1_I2 I2_I3 I3_E"/>
+    <route id="north1_to_west" edges="N1_I1 I1_W"/>
+
+    <!-- Side-road traffic at intersection 2 -->
+    <route id="north2_to_west" edges="N2_I2 I2_I1 I1_W"/>
+    <route id="north2_to_east" edges="N2_I2 I2_I3 I3_E"/>
+    <route id="south2_to_west" edges="S2_I2 I2_I1 I1_W"/>
+    <route id="south2_to_east" edges="S2_I2 I2_I3 I3_E"/>
+
+    <!-- Side-road traffic at intersection 3 -->
+    <route id="north3_to_west" edges="N3_I3 I3_I2 I2_I1 I1_W"/>
+    <route id="south3_to_east" edges="S3_I3 I3_E"/>
+    <route id="north3_to_east" edges="N3_I3 I3_E"/>
+    <route id="south3_to_west" edges="S3_I3 I3_I2 I2_I1 I1_W"/>
+
+    <flow id="main_eb" type="car" route="west_to_east"
+          begin="0" end="7200" vehsPerHour="500"/>
+    <flow id="main_wb" type="car" route="east_to_west"
+          begin="0" end="7200" vehsPerHour="500"/>
+
+    <flow id="n1e" type="car" route="north1_to_east"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="s1w" type="car" route="south1_to_west"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="s1e" type="car" route="south1_to_east"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="n1w" type="car" route="north1_to_west"
+          begin="0" end="7200" vehsPerHour="100"/>
+
+    <flow id="n2w" type="car" route="north2_to_west"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="n2e" type="car" route="north2_to_east"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="s2w" type="car" route="south2_to_west"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="s2e" type="car" route="south2_to_east"
+          begin="0" end="7200" vehsPerHour="100"/>
+
+    <flow id="n3w" type="car" route="north3_to_west"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="s3e" type="car" route="south3_to_east"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="n3e" type="car" route="north3_to_east"
+          begin="0" end="7200" vehsPerHour="100"/>
+    <flow id="s3w" type="car" route="south3_to_west"
+          begin="0" end="7200" vehsPerHour="100"/>
+</routes>

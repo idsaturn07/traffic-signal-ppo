@@ -1,0 +1,4 @@
+method,arrived_mean,arrived_std,travel_time_mean,travel_time_std,queue_mean
+fixed_time,225.0,1.22,197.93,1.15,14.6
+independent_ppo,256.8,6.69,171.97,8.37,15.4
+max_pressure,267.0,1.0,157.99,1.71,11.8

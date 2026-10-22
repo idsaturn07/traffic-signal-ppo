@@ -1,3 +1,6 @@
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'core'))
+
 ﻿from actions import ACTIONS
 from traffic_env import ACTIONS as ENV_ACTIONS
 
